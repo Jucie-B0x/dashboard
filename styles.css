@@ -7,6 +7,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .sidebar {
@@ -23,35 +24,69 @@ body {
   grid-row: 1/2;
   grid-column: 2/3;
   display: grid;
-  grid-template-columns: 1fr 5fr 2fr 1fr 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 6fr  1fr 1fr 2fr;
   grid-template-rows: 75px;
+  padding: 30px;
 }
-.action {
-  grid-column: span 6;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(autofill, minmax(50px, 1fr));
+.spyglass {
+    scale: 30%;
+    /* justify-self: center; */
+    align-self: center;
 }
-.profile {
-  grid-column: 1;
-  grid-row: 1/2;
-  background-color: black;
-  border-radius: 50%;
+#search {
+    border-radius:50px;
+    background-color:rgb(230, 230, 230) ;
+    height: 50%;
+    align-self: center;
+    grid-column:2/3 ;
+    margin-right: 100px;
+}
+button {
+    border: 0;
+    background-color: white;
+}
+.notif {
+    width: 30px;
+    align-self: center;
+    justify-self: center;
+}
+ .profPic{
+    width: 60px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+ }
+ .profName{
+    align-self: center;
+ }
 
+.profile {
+  grid-column: 1/2;
+    border-radius: 50%;
   height: 80px;
   width: 80px;
+  align-self: center;
+  justify-self: center;
 }
-.greeting > h3 {
-  grid-row: 1;
+.greeting {
+    grid-column: 2/3;
 }
-
+.new{
+    grid-column: 3/4;
+}
+.upload {
+    grid-column: 4/5;
+}
+.share {
+    grid-column: 5/6;
+}
 .main {
     display: grid;
     grid-template-columns: repeat(2, 1fr) 300px;
     grid-template-rows: 70px, repeat(3, 1fr);
     background-color: rgb(230, 230, 230);
-    padding: 25px;
+    padding: 30px;
     gap: 20px;
 }
 .main > h1{
@@ -67,7 +102,7 @@ body {
 .projects > div {
     background-color: white;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
 }
 .announcements,
 .trending {
@@ -91,7 +126,7 @@ body {
     grid-template-rows: repeat(4, 1fr);
     background-color: white;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
 }
 
 
